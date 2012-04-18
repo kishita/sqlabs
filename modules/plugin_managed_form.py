@@ -15,5 +15,5 @@ def managed_form(managed_html):
             current.response.files.append(_url)
 
     context = dict(managed_html=managed_html)
-    current.response.render('plugin_managed_google_map/block.html', context)
+    current.response.render('plugin_managed_form/block.html', context)
     return current.response._view_environment['MANAGED_GOOGLE_MAP']
